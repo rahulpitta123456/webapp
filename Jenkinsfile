@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     stages {
-        stage('stage1') {
+        stage('
+              tage1') {
             steps {
                 echo 'git checkout'
                 git 'https://github.com/sebsto/webapp.git'
