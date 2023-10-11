@@ -20,11 +20,5 @@ pipeline {
                  bat 'mvn package'
             }
         }
-         stage('stage4') {
-             steps {
-                 echo 'deploy'
-                 deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://localhost:8085')], contextPath: 'dev', war: '**/*.war'
-            }
-        }    
     }
 }
